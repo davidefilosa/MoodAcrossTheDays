@@ -1,7 +1,10 @@
 import streamlit as st
+import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 import glob
 import plotly.express as px
+
+nltk.download('vader_lexicon')
 
 files = glob.glob('diary/*.txt')
 
