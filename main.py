@@ -7,6 +7,8 @@ import plotly.express as px
 nltk.download('vader_lexicon')
 
 files = glob.glob('diary/*.txt')
+dates = [date.split('\\')[1].split('.')[0] for date in files]
+
 
 entries = []
 for file in files:
@@ -25,7 +27,6 @@ for entry in entries:
     neg.append(score['neg'])
 
 
-dates = [date.split('\\')[1].split('.')[0] for date in files]
 
 st.header('Diary Mood')
 pos_figure = px.line(x=dates, y=pos, labels={'x': 'Dates', 'y': 'Positivity'})
