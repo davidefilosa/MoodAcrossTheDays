@@ -7,10 +7,7 @@ import plotly.express as px
 nltk.download('vader_lexicon')
 
 files = glob.glob('diary/*.txt')
-try:
-    dates = [date.split('\\')[1].split('.')[0] for date in files]
-except:
-    dates = []
+dates = [date.split('\\')[1].split('.')[0] for date in files]
 
 
 entries = []
