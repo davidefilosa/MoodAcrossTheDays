@@ -10,7 +10,8 @@ for file in files:
     with open(file, 'r', encoding='utf-8') as entry:
         entry = entry.read()
         entries.append(entry)
-    analyzer = SentimentIntensityAnalyzer()
+
+analyzer = SentimentIntensityAnalyzer()
 
 pos = []
 neg = []
