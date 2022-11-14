@@ -1,5 +1,4 @@
 # What does this app?
 
-The app does a sentiment analysis on diary entries and visualize the mood
+The app does a sentiment analysis on diary entries using NLTK and visualize the mood using Streamlit
 
-https://davidefilosa-moodacrossthedays-main-51y1ge.streamlit.app/
